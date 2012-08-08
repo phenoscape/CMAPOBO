@@ -6,8 +6,10 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
-import java.util.regex.Pattern;
 
+import org.apache.log4j.BasicConfigurator;
+import org.apache.log4j.Level;
+import org.apache.log4j.Logger;
 import org.bbop.dataadapter.DataAdapterException;
 import org.obo.dataadapter.DefaultOBOParser;
 import org.obo.dataadapter.OBOParseEngine;
@@ -28,49 +30,49 @@ import org.phenoscape.cmapobo.parse.EntryReader;
 public class CMAPOBO {
 
 
-	static final Pattern dotPattern = Pattern.compile("\\.");
-
 	File sourceFile;
 	File destFile;
 
 	OBOSession theSession = null;
 	ObjectFactory oboFactory = null;
+	
+	static Logger logger = Logger.getLogger(CMAPOBO.class.getName());
 
 	/**
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		String sourceFileName;
-		String ontPrefix;
+		BasicConfigurator.configure();
+		logger.setLevel(Level.INFO);
 		if (args.length < 2){
 			System.err.println("Usage: cmapobo file ontprefix");
 			System.err.println("file - CMAP 'lifemap' format export");
 			System.err.println("ontprefix");
 			return;
 		}
-		sourceFileName = args[0];
-		ontPrefix = args[1];
+		final String sourceFileName = args[0];
+		final String ontPrefix = args[1];
 		CMAPOBO builder = new CMAPOBO();
 		builder.process(sourceFileName, ontPrefix);
 
 	}
 
 	void process(String sourceName, String prefix){
+		logger.debug("Processing with source = " + sourceName);
 		sourceFile = new File(sourceName);
 		EntryReader er = new EntryReader(prefix);
 		List<Entry>entryList = er.processCatalog(sourceFile, true);
-		String[] sourceComps = dotPattern.split(sourceName);
-		String destString = sourceComps[0] + ".obo";
+		final int lastdot = sourceName.lastIndexOf('.');
+		String destString = sourceName.substring(0,lastdot) + ".obo";
 		theSession =  DefaultObjectFactory.getFactory().createSession();
 		ObjectFactory oboFactory = theSession.getObjectFactory();
 		Collection<OBOClass> terms = TermUtil.getTerms(theSession);
 		Map<String,OBOClass> termNames = getAllTermNamesHash(terms);
 		final OBOProperty isaProperty = OBOProperty.IS_A;
 		if (isaProperty == null){
-			System.err.println("isa not found");
+			logger.fatal("is_a property not found");
 			System.exit(0);
 		}
-
 
 		for(Entry e : entryList){
 			OBOClass sourceClass;
@@ -127,7 +129,7 @@ public class CMAPOBO {
         if (result == null){
         	OBOProperty newProp = (OBOProperty) new OBOPropertyImpl(name,name);
         	theSession.addObject(newProp);
-        	System.out.println("Creating new property: " + name);
+        	logger.debug("Creating new property: " + name);
         	result = newProp;
         }
         return result;
@@ -170,6 +172,7 @@ public class CMAPOBO {
 	}
 
 	private void saveOBOSession(OBOSession session,String OBODst){
+		logger.debug("About to save to " + OBODst);
 		OBO_1_2_Serializer serializer = new OBO_1_2_Serializer();
 		OBOSerializationEngine se = new OBOSerializationEngine();
 		try {

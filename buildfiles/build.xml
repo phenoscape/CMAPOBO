@@ -35,9 +35,9 @@
     <description>
             This is the main build file for the Query application on all platforms.
     </description>
-	<property name="sourceDir" location="${basedir}/src"/>
+	<property name="sourceDir" location="${basedir}/src/main"/>
 	<property name="sourceLib" location="${sourceDir}/lib"/>
-	<property name="unitTestDir" location="${basedir}/src/unitTests"/>
+	<property name="unitTestDir" location="${basedir}/src/test"/>
 	<property name="jarsDir" location= "${basedir}/jars"/>
 	<property name="targetDir" location= "${basedir}/targets"/>
 	<property name="buildDir" location= "${basedir}/build"/>
@@ -46,6 +46,7 @@
 	<property name="version" value="0.1"/>
 	<path id="project.all.jars">
 		<pathelement location="${jarsDir}/log4j-1.2.15.jar"/>
+		<pathelement location="${jarsDir}/junit-4.8.2.jar"/>
 		<pathelement location="${jarsDir}/exceptions.jar"/>
 		<pathelement location="${jarsDir}/bbop.jar"/>
 		<pathelement location="${jarsDir}/obo.jar"/>
@@ -53,6 +54,7 @@
 	</path>
 	<path id="test.classpath">
 		<pathelement location="${buildDir}"/>
+		<pathelement location="${jarsDir}/junit-4.8.2.jar"/>
 	</path>
 	
 	<!-- ================================= 
@@ -83,15 +85,6 @@
 		target="1.5">
 			<classpath refid="project.all.jars"/>
 		</javac>
-		<copy tofile="${buildDir}/phenoscape/queries/lib/connection.properties" file="${notesDir}/connection.properties"/>
-		<copy tofile="${buildDir}/phenoscape/queries/lib/testConnection.properties" file="${notesDir}/testConnection.properties"/>
-		<jar destfile="${jarsDir}/queryscripts.jar"
-			basedir="${buildDir}">
-			<manifest>
-				<attribute name="Main-CLass"
-				  value="phenoscape.queries.GenusVariationList"/>
-			</manifest>
-		</jar>
 	</target>
 	
 	<target name="buildLinux" description="builds for Linux"
@@ -102,7 +95,7 @@
 	<target name="unit-test" description="run unit tests">
 		<junit>
 			<classpath refid="test.classpath"/>
-			<test name="phenoscape.queries.TestPropTree1"/>
+			<test name=""/>
 		</junit>
 	</target>
 	

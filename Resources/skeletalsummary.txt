@@ -1,0 +1,284 @@
+Legend Redundant terms in dotted lines,181,64
+Cells:,643,60
+????,271,90
+????,is_a,????,35,91,142,90,271,90
+????,part_of,????,35,113,142,113,267,113
+Tissues:,1761,116
+cell,642,124
+????,269,147
+????,develops_from transforms_into,????,31,147,145,147,269,147
+Skeleton:,2719,151
+????,268,184
+????,produces  secretes,????,29,187,143,187,268,184
+????,participates_in  results_in_formation_of,????,28,220,143,221,273,223
+cell condensation,2290,260
+Process terms:,136,283
+neural crest cell,is_a,cell,905,281,770,199,642,124
+notochordal cell,is_a,cell,544,282,586,205,642,124
+notochordal cell,develops_ from,notochordal mesodermal cell,544,282,643,306,1114,412
+notochordal mesodermal cell,is_a,mesodermal cell,1114,412,904,336,747,285
+mesodermal cell,is_a,cell,747,285,683,201,642,124
+skeletogenic cell,is_a,cell,360,286,509,205,642,124
+skeletogenic cell,produces,mineralized tissue,360,286,1046,584,1432,1348
+mineralized tissue,has_quality,mineralized (GO?),1432,1348,1543,1337,1643,1350
+mineralized tissue,is_a,skeletal tissue,1432,1348,1576,1131,1729,722
+skeletal tissue,has_function,organism structural support,1729,722,2186,811,2515,824
+skeletal tissue,has_function,organism structural support,1729,722,1794,652,1924,540
+skeletal tissue,is_a,connective tissue,1729,722,1733,634,1716,522
+connective tissue,is_a,portion of tissue,1716,522,1722,467,1736,401
+portion of tissue,is_a,anatomical entity,1736,401,1780,358,1796,299
+skeletal tissue,develops_from,skeletogenic cell,1729,722,992,523,360,286
+skeletogenic cell,produces,mineralized extracellular matrix,360,286,638,512,1275,1361
+mineralized extracellular matrix,is_a,proteinaceous extracellular  matrix,1275,1361,1267,1231,1224,1033
+proteinaceous extracellular  matrix,is_a,extracellular matrix,1224,1033,1229,993,1220,924
+extracellular matrix,is_a,acellular structure,1220,924,1207,876,1194,772
+mineralized extracellular matrix,has_quality,mineralized (GO?),1275,1361,1517,1393,1643,1350
+anatomical system,2616,287
+odontogenic papilla,is_a,cell condensation,2294,345,2291,303,2290,260
+multi-tissue structure,is_a,anatomical entity,1923,402,1869,358,1796,299
+skeletal system,is_a,anatomical system,2620,405,2620,346,2616,287
+integumentary papilla,is_a,odontogenic papilla,2385,440,2345,398,2294,345
+integumentary papilla,has_location,integument,2385,440,2377,478,2389,524
+oropharyngeal  papilla,is_a,odontogenic papilla,2199,441,2217,398,2294,345
+anatomical cluster,3102,500
+notochord,is_a,multi-tissue structure,2098,504,2047,462,1923,402
+Scales,3847,523
+oropharynx,2224,532
+dermal skeleton,part_of,skeletal system,2905,559,2744,539,2620,405
+dermal skeleton,is_a,anatomical cluster,2905,559,3003,529,3102,500
+perichondrium,is_a,connective tissue,1332,564,1579,582,1716,522
+endoskeleton,part_of,skeletal system,2395,586,2551,500,2620,405
+endoskeleton,is_a,anatomical cluster,2395,586,2866,508,3102,500
+preameloblast,develops_ from,neural crest cell,113,614,194,564,905,281
+preameloblast,is_a,skeletogenic cell,113,614,263,422,360,286
+preameloblast,overlies,odontogenic papilla,113,614,109,672,45,936
+chordoblast,produces,cartilage tissue,950,615,1016,669,1508,845
+cartilage tissue,part_of,endoskeleton,1508,845,1608,717,2395,586
+cartilage tissue,is_a,skeletal tissue,1508,845,1638,777,1729,722
+chordoblast,develops_ from,notochordal mesodermal cell,950,615,1065,475,1114,412
+chordoblast,is_a,skeletogenic cell,950,615,606,416,360,286
+preodontoblast,develops_ from,neural crest cell,306,616,348,566,905,281
+preodontoblast,part_of,odontogenic papilla,306,616,254,683,45,936
+preodontoblast,part_of,predentine,306,616,254,683,42,766
+preodontoblast,is_a,skeletogenic cell,306,616,320,433,360,286
+precementoblast,develops_ from,neural crest cell,483,618,486,561,905,281
+precementoblast,is_a,skeletogenic cell,483,618,417,423,360,286
+precementoblast,part_of,odontogenic papilla,483,618,481,683,45,936
+prechondroblast,develops_ from,neural crest cell,837,618,818,563,905,281
+prechondroblast,develops_ from,notochordal cell,837,618,818,563,544,282
+prechondroblast,develops_ from,mesodermal cell,837,618,818,563,747,285
+prechondroblast,is_a,skeletogenic cell,837,618,537,416,360,286
+preosteoblast,is_a,skeletogenic cell,666,620,478,420,360,286
+preosteoblast,develops_ from,neural crest cell,666,620,700,567,905,281
+preosteoblast,develops_ from,mesodermal cell,666,620,700,567,747,285
+preosteoblast,part_of,osteoid,666,620,739,667,1116,1177
+osteoid,is_a,bone tissue,1116,1177,1109,995,1763,904
+bone tissue,is_a,skeletal tissue,1763,904,1745,806,1729,722
+bone tissue,part_of,endoskeleton,1763,904,2026,734,2395,586
+bone tissue,part_of,dermal skeleton,1763,904,1884,709,2905,559
+osteoid,is_a,proteinaceous extracellular  matrix,1116,1177,1170,1097,1224,1033
+scale,part_of,skeletal system,3842,640,3236,446,2620,405
+cranial skeleton,is_a,anatomical cluster,2823,699,2957,637,3102,500
+cranial skeleton,part_of,skeletal system,2823,699,2725,658,2620,405
+dense regular connective tissue,is_a,connective tissue,1456,710,1568,627,1716,522
+lepidosteoid scale,is_a,ganoid scale,3521,713,3566,809,3610,892
+ganoid scale,is_a,scale,3610,892,3696,779,3842,640
+vacuolated notochordal tissue,is_a,connective tissue,2131,756,1850,624,1716,522
+vacuolated notochordal tissue,part_of,notochord,2131,756,2061,587,2098,504
+perichordal tissue,part_of,notochord,2331,753,2145,594,2098,504
+perichordal tissue,is_a,connective tissue,2331,753,1940,621,1716,522
+polypteroid scale,is_a,ganoid scale,3421,762,3506,818,3610,892
+axial skeleton,has_location,axis,2798,762,2945,776,3100,776
+axial skeleton,is_a,anatomical cluster,2798,762,2970,665,3102,500
+axial skeleton,part_of,skeletal system,2798,762,2712,718,2620,405
+chondroblast,produces,cartilage tissue,889,765,1010,796,1508,845
+chondroblast,produces,avascular GAG-rich matrix,889,765,994,1054,1067,1354
+avascular GAG-rich matrix,is_a,proteinaceous extracellular  matrix,1067,1354,1154,1236,1224,1033
+chondroblast,develops_ from,prechondroblast,889,765,902,717,837,618
+chondroblast,part_of,cartilage tissue,889,765,992,764,1508,845
+chondroblast,is_a,skeletogenic cell,889,765,820,697,360,286
+osteoblast,capable_of _producing?,mineralized extracellular matrix,723,773,727,894,1275,1361
+osteoblast,is_a,skeletogenic cell,723,773,645,689,360,286
+osteoblast,part_of,osteoid,723,773,795,833,1116,1177
+osteoblast,transforms_ from,preosteoblast,723,773,715,726,666,620
+osteoblast,produces,bone tissue,723,773,916,838,1763,904
+osteoblast,produces,osteoid,723,773,756,857,1116,1177
+cementoblast,part_of,odontogenic papilla,582,783,442,890,45,936
+cementoblast,produces,cementum,582,783,1084,1736,2143,1615
+cementum,is_a,odontoid tissue,2143,1615,2047,1414,1955,927
+odontoid tissue,part_of,dermal skeleton,1955,927,2541,656,2905,559
+odontoid tissue,is_a,skeletal tissue,1955,927,1810,791,1729,722
+odontoid tissue,develops_from,odontogenic papilla,1955,927,2125,627,2294,345
+cementoblast,is_a,skeletogenic cell,582,783,588,688,360,286
+cementoblast,develops_ from,precementoblast,582,783,529,723,483,618
+ameloblast,transforms_ from,preameloblast,249,784,159,695,113,614
+ameloblast,produces,enamel,249,784,1094,1789,2222,1464
+enamel,is_a,odontoid tissue,2222,1464,2163,1388,1955,927
+enamel,develops_from,pre-enamel,2222,1464,2238,1518,2243,1578
+pre-enamel,is_a,odontoid tissue,2243,1578,2089,1407,1955,927
+enamel,has_quality,mineralized,2222,1464,2322,1621,2470,1820
+ameloblast,overlies,odontogenic papilla,249,784,176,826,45,936
+ameloblast,is_a,skeletogenic cell,249,784,217,693,360,286
+odontoblast,is_a,skeletogenic cell,421,785,403,703,360,286
+odontoblast,part_of,dentine,421,785,374,881,69,1161
+odontoblast,part_of,odontogenic papilla,421,785,374,881,45,936
+odontoblast,produces,dentine,421,785,1096,1753,3142,1221
+dentine,part_of and has_part,elasmoid scale,3142,1221,3552,1115,3742,936
+elasmoid scale,is_a,scale,3742,936,3784,859,3842,640
+dentine,is_a,odontoid tissue,3142,1221,2402,1055,1955,927
+dentine,has_quality,mineralized,3142,1221,2755,1475,2470,1820
+dentine,develops_from,pre-dentine,3142,1221,2646,1352,2359,1400
+pre-dentine,is_a,odontoid tissue,2359,1400,2224,1306,1955,927
+odontoblast,develops_ from,preodontoblast,421,785,329,717,306,616
+ligament,is_a,dense regular connective tissue,1392,788,1426,760,1456,710
+tendon,is_a,dense regular connective tissue,1490,790,1469,760,1456,710
+palaeoniscoid scale,is_a,ganoid scale,3336,832,3466,869,3610,892
+appendage,3112,837
+appendicular skeleton,is_a,anatomical cluster,2768,837,2982,725,3102,500
+appendicular skeleton,part_of,skeletal system,2768,837,2675,760,2620,405
+appendicular skeleton,has_location,appendage,2768,837,2964,836,3112,837
+non-mineralized chondroid tissue,is_a,skeletal tissue,2391,882,1980,795,1729,722
+chondroid tissue,is_a,skeletal tissue,2132,893,1914,805,1729,722
+chondroid tissue,develops_from,non-mineralized chondroid tissue,2132,893,2336,924,2391,882
+odontode sacle,is_a,scale,4062,894,3969,780,3842,640
+keratin based scale,is_a,scale,4232,898,4050,777,3842,640
+cosmoid scale,is_a,scale,3917,898,3891,788,3842,640
+craniofacial skeleton,is_a,anatomical cluster,2756,940,2972,891,3102,500
+craniofacial skeleton,part_of,skeletal system,2756,940,2648,847,2620,405
+craniofacial skeleton,has_location,craniofacial region,2756,940,2943,960,3103,960
+cementocyte,transformation _of,cementoblast,565,949,586,896,582,783
+cementocyte,part_of,odontogenic papilla,565,949,465,993,45,936
+cementocyte,is_a,skeletogenic cell,565,949,491,837,360,286
+chondrocyte,part_of,cartilage tissue,742,953,831,956,1508,845
+chondrocyte,develops_ from,chondroblast,742,953,818,892,889,765
+chondrocyte,is_a,skeletogenic cell,742,953,675,823,360,286
+chondrocyte,produces,avascular GAG-rich matrix,742,953,829,1025,1067,1354
+secondary  cartilage  tissue,is_a,cartilage tissue,1725,972,1586,911,1508,845
+secondary  cartilage  tissue,part_of,dermal skeleton,1725,972,2478,930,2905,559
+chondrocyte,has_part,chondroid tissue,2570,974,2227,928,2132,893
+chondrocyte,has_part,chondrocyte,2570,974,2227,928,2570,974
+cosmine,is_a,odontoid tissue,2431,983,2294,959,1955,927
+mineralized  cartilage tissue,is_a,cartilage tissue,1456,1010,1470,922,1508,845
+non-mineralized cartilage tissue,is_a,cartilage tissue,1575,1014,1545,926,1508,845
+integumentary skeleton,is_a,anatomical cluster,2820,1014,2979,1005,3102,500
+integumentary skeleton,has_location,integument,2820,1014,2958,1053,3091,1043
+integumentary skeleton,part_of,dermal skeleton,2820,1014,2898,812,2905,559
+integumentary skeleton,part_of,skeletal system,2820,1014,2630,916,2620,405
+elastic cartilage tissue,develops_from,chondrogenic condensation,1744,1065,2256,1824,2731,2410
+chondrogenic condensation,is_a,cell condensation,2731,2410,2027,1277,2290,260
+elastic cartilage tissue,is_a,non-mineralized cartilage tissue,1744,1065,1668,1052,1575,1014
+postcranial axial skeleton,is_a,anatomical cluster,2809,1070,2990,1110,3102,500
+postcranial axial skeleton,part_of,skeletal system,2809,1070,2602,939,2620,405
+hyaline cartilage tissue,is_a,cartilage tissue,1502,1089,1503,921,1508,845
+non-terminally  differentiated odontoblast,part_of,dentine,365,1093,257,1104,69,1161
+non-terminally  differentiated odontoblast,part_of,odontogenic papilla,365,1093,257,1104,45,936
+non-terminally  differentiated odontoblast,transforms_ from,odontoblast,365,1093,286,1003,421,785
+non-terminally  differentiated odontoblast,is_a,odontoblast,365,1093,397,1024,421,785
+terminally  differentiated odontoblast,part_of,odontogenic papilla,488,1096,302,1162,45,936
+terminally  differentiated odontoblast,part_of,dentine,488,1096,302,1162,69,1161
+terminally  differentiated odontoblast,is_a,odontoblast,488,1096,444,1029,421,785
+orthodentine,is_a,odontoid tissue,2482,1103,2318,1054,1955,927
+hypertrophic  chondrocyte,is_a,chondrocyte,828,1118,795,1052,742,953
+hypertrophic  chondrocyte,has_quality,hypertrophic,828,1118,854,1174,900,1226
+periarticular  chondrocyte,has_location,articulation,685,1121,687,1181,682,1229
+periarticular  chondrocyte,is_a,chondrocyte,685,1121,706,1057,742,953
+osteodentine,is_a,odontoid tissue,2471,1143,2318,1085,1955,927
+fibrocartilage,is_a,cartilage tissue,1392,1149,1422,921,1508,845
+ganoine,is_a,odontoid tissue,3127,1153,2331,996,1955,927
+ganoine,part_of,ganoid scale,3127,1153,3350,1034,3610,892
+limiting layer of  elasmoid scale,part_of,elasmoid scale,3706,1165,3715,1080,3742,936
+vasodentine,is_a,odontoid tissue,2452,1185,2325,1120,1955,927
+elasmodine,is_a,odontoid tissue,3132,1188,2368,1027,1955,927
+elasmodine,part_of and has_part,elasmoid scale,3132,1188,3460,1084,3742,936
+non-mineralized hyaline cartilage tissue,is_a,non-mineralized cartilage tissue,1621,1212,1608,1160,1575,1014
+non-mineralized hyaline cartilage tissue,is_a,hyaline cartilage tissue,1621,1212,1561,1150,1502,1089
+mineralized hyaline  cartilage tissue,is_a,mineralized  cartilage tissue,1441,1212,1453,1127,1456,1010
+mineralized hyaline  cartilage tissue,has_quality,mineralized (GO?),1441,1212,1586,1309,1643,1350
+mineralized hyaline  cartilage tissue,develops_from,hyaline cartilage tissue,1441,1212,1512,1171,1502,1089
+mineralized hyaline  cartilage tissue,is_a,mineralized tissue,1441,1212,1440,1291,1432,1348
+mineralized hyaline  cartilage tissue,is_a,hyaline cartilage tissue,1441,1212,1471,1150,1502,1089
+columnar chondrocyte,has_ quality,columnar,799,1226,826,1263,896,1304
+columnar chondrocyte,is_a,chondrocyte,799,1226,773,1174,742,953
+odontocyte,transforms_from,non-terminally  differentiated odontoblast,377,1228,398,1176,365,1093
+odontocyte,part_of,dentine,377,1228,288,1215,69,1161
+odontocyte,part_of,odontogenic papilla,377,1228,288,1215,45,936
+odontocyte,is_a,skeletogenic cell,377,1228,246,1075,360,286
+odontocyte,produces,dentine,377,1228,1096,1753,3142,1221
+enameloid,develops_from,pre-enameloid,2462,1228,2467,1262,2464,1297
+pre-enameloid,is_a,odontoid tissue,2464,1297,2319,1211,1955,927
+enameloid,is_a,odontoid tissue,2462,1228,2324,1155,1955,927
+mineralized bone tissue,is_a,mineralized tissue,1839,1280,1650,1266,1432,1348
+mineralized bone tissue,part_of,mineralized extracellular matrix,1839,1280,1578,1442,1275,1361
+mineralized bone tissue,part_of,mineralized bone tissue,1839,1280,1578,1442,1839,1280
+mineralized bone tissue,is_a,bone tissue,1839,1280,1858,1161,1763,904
+mineralized bone tissue,develops_from,osteoid,1839,1280,1344,1305,1116,1177
+terminally  differentiated  osteoblast,is_a,osteoblast,511,1343,613,1125,723,773
+non-terminally  differentiated  osteoblast,is_a,osteoblast,363,1348,553,1123,723,773
+non-terminally  differentiated  osteoblast,has_part part_of,cellular bone tissue,363,1348,1233,1670,1754,1529
+cellular bone tissue,is_a,mineralized bone tissue,1754,1529,1772,1472,1839,1280
+non-mineralized  avascular GAG-rich matrix,is_a,avascular GAG-rich matrix,1141,1486,1116,1430,1067,1354
+non-mineralized  avascular GAG-rich matrix,part_of,non-mineralized cartilage tissue,1141,1486,1309,1085,1575,1014
+mineralized avascular  GAG-rich matrix,is_a,mineralized extracellular matrix,1349,1486,1323,1423,1275,1361
+mineralized avascular  GAG-rich matrix,is_a,avascular GAG-rich matrix,1349,1486,1210,1423,1067,1354
+mineralized avascular  GAG-rich matrix,has_quality,mineralized (GO?),1349,1486,1525,1420,1643,1350
+mineralized avascular  GAG-rich matrix,part_of,mineralized  cartilage tissue,1349,1486,1322,1111,1456,1010
+odontoblast   terminally diff odontoblast non-terminally differentiated odontoblast   odontocyte,part_of,dentine,3043,1537,3075,1427,3142,1221
+acellular bone tissue,has_part,terminally  differentiated  osteoblast,1944,1527,1152,1730,511,1343
+acellular bone tissue,is_a,mineralized bone tissue,1944,1527,1895,1468,1839,1280
+odontode tissue,has_quality,mineralized,2750,1587,2689,1658,2470,1820
+odontode tissue,is_a,odontoid tissue,2750,1587,2281,1236,1955,927
+odontode tissue,develops_from,pre-dentine,2750,1587,2475,1471,2359,1400
+osteocyte,transformation_ of,non-terminally  differentiated  osteoblast,1201,1594,678,1538,363,1348
+osteocyte,part_of,mineralized bone tissue,1201,1594,1659,1469,1839,1280
+osteocyte,is_a,skeletogenic cell,1201,1594,590,1319,360,286
+osteocyte,has_part part_of,osteocyte,1201,1594,1420,1588,1201,1594
+osteocyte,has_part part_of,cellular bone tissue,1201,1594,1420,1588,1754,1529
+osteocyte,produces,mineralized extracellular matrix,1201,1594,1240,1522,1275,1361
+preodontoblast,part_of,pre-dentine,2466,1618,2336,1489,2359,1400
+preodontoblast,deposits,pre-dentine,2466,1618,2405,1484,2359,1400
+compound organ,1020,1681
+Skeletal elements,1918,1912
+compound organ,2193,1977
+skeletal system,2368,2002
+Gastralia,is_a,skeletal element,1631,2007,1920,2050,2209,2093
+skeletal element,is_a,compound organ,2209,2093,2204,2057,2193,1977
+skeletal element,Part_of,skeletal system,2209,2093,2290,2058,2368,2002
+Opercle bone (and all other bones under  'Dermal bone' TAO: 0001590),is_a,dermal bone,2880,2110,2774,2159,2691,2213
+dermal bone,is_a,skeletal element,2691,2213,2497,2168,2209,2093
+appendicular ossicle,is_a,ossicle,1263,2065,1411,2064,1592,2064
+ossicle,is_a,skeletal element,1592,2064,1860,2062,2209,2093
+axial ossicle,is_a,ossicle,1248,2125,1438,2096,1592,2064
+intratendonous ossification,is_a,ossicle,1273,2182,1419,2142,1592,2064
+replacement element,is_a,skeletal element,2327,2201,2281,2151,2209,2093
+dense regular connective tissue,1069,2220
+direct ossification,participates_in,dermal bone,3062,2243,2891,2227,2691,2213
+sesamoid,forms_via,chondrogenic condensation,1297,2276,1780,2333,2731,2410
+sesamoid,is_a,ossicle,1297,2276,1447,2177,1592,2064
+sesamoid,develops_IN,dense regular connective tissue,1297,2276,1214,2261,1069,2220
+ligamentous replacement element,is_a,replacement element,2094,2305,2206,2263,2327,2201
+endochondral element (endochondral replacement element),participates_in,indirect ossification,2445,2349,2107,2397,1933,2426
+endochondral element (endochondral replacement element),is_a,replacement element,2445,2349,2387,2280,2327,2201
+intramembranous ossification,is_a,direct ossification,3426,2343,3236,2281,3062,2243
+metaplastic ossification,is_a,direct ossification,3219,2347,3156,2302,3062,2243
+anatomical system,1446,2511
+endochondral ossification,is_a,indirect ossification,1783,2529,1874,2476,1933,2426
+perichondral ossification,is_a,indirect ossification,1965,2531,1951,2486,1933,2426
+ossified chondrogenic bone (endochondral replacement bone),develops_from,transient cartilaginous element (endochondral replacement cartilage),2432,2560,2639,2559,2858,2561
+transient cartilaginous element (endochondral replacement cartilage),is_a,endochondral element (endochondral replacement element),2858,2561,2644,2470,2445,2349
+transient cartilaginous element (endochondral replacement cartilage),develops_from,chondrogenic condensation,2858,2561,2782,2494,2731,2410
+transient cartilaginous element (endochondral replacement cartilage),has_part,cartilage tissue,2858,2561,2942,2605,2980,2632
+ossified chondrogenic bone (endochondral replacement bone),is_a,endochondral element (endochondral replacement element),2432,2560,2438,2482,2445,2349
+ossified chondrogenic bone (endochondral replacement bone),has_part,bone tissue,2432,2560,2480,2602,2521,2631
+basihyal element,is_a,endochondral element (endochondral replacement element),2208,2559,2291,2479,2445,2349
+basihyal element,part_of,ventral hyoid arch,2208,2559,2077,2639,1958,2692
+ventral hyoid arch,part_of,pharyngeal arches,1958,2692,1833,2700,1673,2702
+pharyngeal arches,part_of,cranial skeleton,1673,2702,1548,2729,1477,2685
+cranial skeleton,part_of,skeletal system,1477,2685,1471,2651,1466,2608
+skeletal system,is_a,anatomical system,1466,2608,1459,2562,1446,2511
+basihyal condensation,is_a,chondrogenic condensation,3167,2647,3077,2531,2731,2410
+basihyal bone,develops_from,basihyal cartilage,2455,2795,2592,2797,2874,2799
+basihyal cartilage,develops_from,basihyal condensation,2874,2799,3102,2770,3167,2647
+basihyal cartilage,is_a,basihyal element,2874,2799,2373,2623,2208,2559
+basihyal cartilage,is_a,transient cartilaginous element (endochondral replacement cartilage),2874,2799,2862,2685,2858,2561
+basihyal bone,is_a,ossified chondrogenic bone (endochondral replacement bone),2455,2795,2451,2732,2432,2560
+basihyal bone,is_a,basihyal element,2455,2795,2347,2686,2208,2559
