@@ -1,0 +1,1 @@
+This is a simple command line tool to generate simple OBO format (syntax version 1.2) files from ontology graphs created in the CMAP tool.  To convert you will need to save the graph as a LifeMap text file.  Run the tool as cmapobo <file> <prefix> where prefix is the prefix desired for generated ids (e.g., VAO).  There is an example cmap file in the examples folder.
